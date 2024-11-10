@@ -415,6 +415,7 @@ def genetic_algorithm():
 
 ######################
 timetable = genetic_algorithm()
+staff_timetable = facTime(timetable)
 
 def prepare_timetable_for_display(timetable):
     timetable_df = pd.DataFrame(timetable)
@@ -424,3 +425,5 @@ def prepare_timetable_for_display(timetable):
 # Display in Streamlit after converting
 timetable_df = prepare_timetable_for_display(timetable)
 st.dataframe(timetable_df)
+fc_tietable_df = prepare_timetable_for_display(staff_timetable)
+st.dataframe(fc_tietable_df)
