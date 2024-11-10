@@ -423,9 +423,6 @@ def prepare_timetable_for_display(timetable):
     return timetable_df
 
 # Display in Streamlit after converting
-st.write("Class Timetable")
-timetable_df = prepare_timetable_for_display(timetable)
-st.dataframe(timetable_df)
 st.write("Staff Timetable")
 fc_tietable_df = prepare_timetable_for_display(staff_timetable)
 st.dataframe(fc_tietable_df)
